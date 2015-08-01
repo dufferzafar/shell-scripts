@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Utility to add a list of numbers passed
+#
+# Usage:
+#
+# cat file-containing-numbers | add
+
+awk '{sum+=$1} END {printf "%.0f", sum}'
